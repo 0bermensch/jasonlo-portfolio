@@ -6,8 +6,12 @@ const Contacts = () => {
   return (
     <div className="contact">
       <div>jason.lo.kc@gmail.com</div>
-      <img className="contact__logo" src={githublogo} alt="githublogo" />
-      <img className="contact__logo" src={linkedinlogo} alt="linkedinlogo" />
+      <img className="contact__githublogo" src={githublogo} alt="githublogo" />
+      <img
+        className="contact__linkedinlogo"
+        src={linkedinlogo}
+        alt="linkedinlogo"
+      />
       <form>
         <input></input>
       </form>

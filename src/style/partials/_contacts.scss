@@ -1,3 +1,14 @@
+.contact {
+  &__githublogo {
+    fill: white;
+  }
+  &__githublogo,
+  &__linkedinlogo {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 @include tablet {
 }
 

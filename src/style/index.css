@@ -248,6 +248,12 @@
   margin: auto 0.3rem;
 }
 
+.tech__logo:hover {
+  height: 23%;
+  width: 23%;
+  fill: purple;
+}
+
 @media only screen and (min-width: 768px) {
   .tech__divider {
     display: -webkit-box;
@@ -266,6 +272,10 @@
     height: 25%;
     width: 25%;
   }
+  .tech__logo:hover {
+    height: 30%;
+    width: 30%;
+  }
 }
 
 .project {
@@ -279,12 +289,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .project__card {
-  margin: 3rem 0;
+  margin: 7rem 0;
   height: 15rem;
   width: 80%;
+}
+
+.project__card:hover {
+  height: 16rem;
+  width: 85%;
 }
 
 .project__card--mainpic {
@@ -298,10 +314,59 @@
 }
 
 @media only screen and (min-width: 768px) {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (264px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 264px);
+  .project {
+    margin: 0 15%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 20rem 20rem 20rem;
+        grid-template-rows: 20rem 20rem 20rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 10rem;
+  }
+  .project__card:hover {
+    height: 100%;
+    width: 100%;
+  }
+  .project__card--title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project {
+    margin: 0 15%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 20rem 20rem 20rem;
+        grid-template-rows: 20rem 20rem 20rem;
+    grid-column-gap: 7rem;
+    grid-row-gap: 35rem;
+  }
+  .project__card {
+    height: 25rem;
+    width: 25rem;
+  }
+  .project__card:hover {
+    height: 125%;
+    width: 115%;
+  }
+  .project__card--title {
+    margin-top: 1rem;
+    font-size: 40px;
+  }
+}
+
+.contact__githublogo {
+  fill: white;
+}
+
+.contact__githublogo, .contact__linkedinlogo {
+  height: 40px;
+  width: 40px;
 }
 
 body {

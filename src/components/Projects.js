@@ -96,7 +96,7 @@ const Projects = () => {
             alt={content.id}
           />
           <div className="project__card--title">{content.title}</div>
-          <Modal
+          {/* <Modal
             show={detail}
             onHide={handleClose}
             backdrop="static"
@@ -108,7 +108,7 @@ const Projects = () => {
               alt={content.id}
             />
             <Modal.Body>{content.techstack}</Modal.Body>
-          </Modal>
+          </Modal> */}
         </div>
       ))}
     </div>

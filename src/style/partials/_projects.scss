@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   &__card {
-    margin: 3rem 0;
+    margin: 7rem 0;
     height: 15rem;
     width: 80%;
+  }
+  &__card:hover {
+    height: 16rem;
+    width: 85%;
   }
   &__card--mainpic {
     max-width: 100%;
@@ -19,9 +24,42 @@
 }
 
 @include tablet {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 264px);
+  .project {
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 10rem;
+    &__card:hover {
+      height: 100%;
+      width: 100%;
+    }
+    &__card--title {
+      font-size: 25px;
+    }
+  }
 }
 
 @include desktop {
+  .project {
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-column-gap: 7rem;
+    grid-row-gap: 35rem;
+    &__card {
+      height: 25rem;
+      width: 25rem;
+    }
+    &__card:hover {
+      height: 125%;
+      width: 115%;
+    }
+    &__card--title {
+      margin-top: 1rem;
+      font-size: 40px;
+    }
+  }
 }
