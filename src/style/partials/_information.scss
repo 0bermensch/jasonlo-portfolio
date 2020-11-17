@@ -1,0 +1,83 @@
+.info {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+
+  &__jobs,
+  &__education,
+  &__certification {
+    font-family: "biorhyme-extrabold";
+    color: $offwhite;
+    padding-top: 30px;
+  }
+  &__title {
+    font-size: 30px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+  }
+  &__entity {
+    font-family: "biorhyme-bold";
+    font-size: 16px;
+    color: $lightgrey;
+  }
+  &__role {
+    font-family: "biorhyme";
+    font-size: 13px;
+    margin-bottom: 0.2rem;
+    color: $grey;
+  }
+  &__date {
+    font-family: "biorhyme-light";
+    color: $grey;
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid white;
+  }
+}
+
+@include tablet {
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20rem 15%;
+
+    &__jobs,
+    &__education,
+    &__certification {
+      width: 30%;
+    }
+    &__title {
+      font-size: 28px;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid white;
+    }
+    &__entity {
+      font-size: 22px;
+    }
+    &__role {
+      font-size: 17px;
+    }
+    &__date {
+      font-size: 17px;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+@include desktop {
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20rem;
+
+    &__jobs,
+    &__education,
+    &__certification {
+      width: 30%;
+    }
+  }
+}

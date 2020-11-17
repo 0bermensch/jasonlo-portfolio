@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "biorhyme";
+  src: url(../Assets/biorhyme/BioRhyme-Regular.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-light";
+  src: url(../Assets//biorhyme/BioRhyme-Light.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-bold";
+  src: url(../Assets/biorhyme/BioRhyme-Bold.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-extrabold";
+  src: url(../Assets/biorhyme/BioRhyme-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-extralight";
+  src: url(../Assets/biorhyme/BioRhyme-ExtraLight.ttf);
+}
+
+.App {
+  background-color: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.introduction {
+  margin: 0 10% 15rem;
+  padding-top: 3rem;
+}
+
+.introduction__pic {
+  margin: 0;
+}
+
+.introduction__divider {
+  margin: 0;
+}
+
+.introduction__name {
+  font-family: "biorhyme-extrabold";
+  color: #f7e9e9;
+}
+
+.introduction__role {
+  font-family: "biorhyme-bold";
+  font-size: 20px;
+  color: #d2c6c6;
+}
+
+.introduction__mission {
+  font-family: "biorhyme-extrabold";
+  font-size: 30px;
+  color: #f7e9e9;
+}
+
+.introduction__missiontext {
+  font-family: "biorhyme";
+  color: #d2c6c6;
+}
+
+@media only screen and (min-width: 768px) {
+  .introduction {
+    margin: 0 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 8rem;
+  }
+  .introduction__divider {
+    margin-right: 2rem;
+  }
+  .introduction__name {
+    font-size: 60px;
+    margin: 0;
+  }
+  .introduction__role {
+    font-size: 30px;
+    margin: 0;
+  }
+  .introduction__mission {
+    font-size: 40px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .introduction__missiontext {
+    font-size: 20px;
+    -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 12rem;
+    margin: 0 25%;
+  }
+  .introduction__divider {
+    margin-right: 2rem;
+  }
+  .introduction__name {
+    font-size: 100px;
+    margin: 0;
+  }
+  .introduction__role {
+    font-size: 60px;
+    margin: 0;
+  }
+  .introduction__mission {
+    font-size: 80px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .introduction__missiontext {
+    font-size: 33px;
+  }
+}
+
+.info {
+  margin: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__jobs, .info__education, .info__certification {
+  font-family: "biorhyme-extrabold";
+  color: #f7e9e9;
+  padding-top: 30px;
+}
+
+.info__title {
+  font-size: 30px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.info__entity {
+  font-family: "biorhyme-bold";
+  font-size: 16px;
+  color: #d2c6c6;
+}
+
+.info__role {
+  font-family: "biorhyme";
+  font-size: 13px;
+  margin-bottom: 0.2rem;
+  color: #b0b0b0;
+}
+
+.info__date {
+  font-family: "biorhyme-light";
+  color: #b0b0b0;
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 20rem 15%;
+  }
+  .info__jobs, .info__education, .info__certification {
+    width: 30%;
+  }
+  .info__title {
+    font-size: 28px;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+  }
+  .info__entity {
+    font-size: 22px;
+  }
+  .info__role {
+    font-size: 17px;
+  }
+  .info__date {
+    font-size: 17px;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 20rem;
+  }
+  .info__jobs, .info__education, .info__certification {
+    width: 30%;
+  }
+}
+
+.tech {
+  margin: 5rem 10%;
+  text-align: center;
+  font-family: "biorhyme-bold";
+  color: #f7e9e9;
+}
+
+.tech__logo {
+  height: 20%;
+  width: 20%;
+  color: white;
+  margin: auto 0.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__divider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tech__frontend, .tech__backend, .tech__database, .tech__others {
+    width: 50%;
+    margin: 0;
+  }
+  .tech__logo {
+    height: 25%;
+    width: 25%;
+  }
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project__card {
+  margin: 3rem 0;
+  height: 15rem;
+  width: 80%;
+}
+
+.project__card--mainpic {
+  max-width: 100%;
+  max-height: 120%;
+  border-radius: 10%;
+}
+
+.project__card--title {
+  font-family: "biorhyme-bold";
+}
+
+@media only screen and (min-width: 768px) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (264px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 264px);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/*# sourceMappingURL=index.css.map */

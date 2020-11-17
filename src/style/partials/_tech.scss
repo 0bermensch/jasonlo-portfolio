@@ -1,0 +1,35 @@
+.tech {
+  margin: 5rem 10%;
+  text-align: center;
+  font-family: "biorhyme-bold";
+  color: $offwhite;
+  &__logo {
+    height: 20%;
+    width: 20%;
+    color: white;
+    margin: auto 0.3rem;
+  }
+}
+
+@include tablet {
+  .tech {
+    &__divider {
+      display: flex;
+      flex-direction: row;
+    }
+    &__frontend,
+    &__backend,
+    &__database,
+    &__others {
+      width: 50%;
+      margin: 0;
+    }
+    &__logo {
+      height: 25%;
+      width: 25%;
+    }
+  }
+}
+
+@include desktop {
+}
