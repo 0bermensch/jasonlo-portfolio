@@ -22,39 +22,44 @@ const Tech = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="tech">
-      <div className="tech__divider">
-        <div data-aos="fade-right" className="tech__frontend">
-          <h2>Front-End</h2>
-          <img className="tech__logo" src={reactlogo} alt="logo" />
-          <img className="tech__logo" src={reduxlogo} alt="logo" />
-          <img className="tech__logo" src={reactnativelogo} alt="logo" />
-          <img className="tech__logo" src={sasslogo} alt="logo" />
+    <>
+      <h1 style={{ textAlign: "center", fontFamily: "biorhyme-extrabold" }}>
+        Tech Stack
+      </h1>
+      <div className="tech">
+        <div className="tech__divider">
+          <div data-aos="fade-right" className="tech__frontend">
+            <h2>Front-End</h2>
+            <img className="tech__logo" src={reactlogo} alt="logo" />
+            <img className="tech__logo" src={reduxlogo} alt="logo" />
+            <img className="tech__logo" src={reactnativelogo} alt="logo" />
+            <img className="tech__logo" src={sasslogo} alt="logo" />
+          </div>
+          <div data-aos="fade-left" className="tech__backend">
+            <h2>Back-End</h2>
+            <img className="tech__logo" src={nodejslogo} alt="logo" />
+            <img className="tech__logo" src={expresslogo} alt="logo" />
+            <img className="tech__logo" src={graphqllogo} alt="logo" />
+          </div>
         </div>
-        <div data-aos="fade-left" className="tech__backend">
-          <h2>Back-End</h2>
-          <img className="tech__logo" src={nodejslogo} alt="logo" />
-          <img className="tech__logo" src={expresslogo} alt="logo" />
-          <img className="tech__logo" src={graphqllogo} alt="logo" />
+        <div className="tech__divider">
+          <div data-aos="fade-right" className="tech__database">
+            <h2>Database</h2>
+            <img className="tech__logo" src={mysqllogo} alt="logo" />
+            <img className="tech__logo" src={postgresqllogo} alt="logo" />
+            <img className="tech__logo" src={mongodblogo} alt="logo" />
+          </div>
+          <div data-aos="fade-left" className="tech__others">
+            <h2>Other</h2>
+            <img className="tech__logo" src={javascriptlogo} alt="logo" />
+            <img className="tech__logo" src={typescriptlogo} alt="logo" />
+            <img className="tech__logo" src={awslogo} alt="logo" />
+            <img className="tech__logo" src={herokulogo} alt="logo" />
+            <img className="tech__logo" src={npmlogo} alt="logo" />
+          </div>
         </div>
       </div>
-      <div className="tech__divider">
-        <div data-aos="fade-right" className="tech__database">
-          <h2>Database</h2>
-          <img className="tech__logo" src={mysqllogo} alt="logo" />
-          <img className="tech__logo" src={postgresqllogo} alt="logo" />
-          <img className="tech__logo" src={mongodblogo} alt="logo" />
-        </div>
-        <div data-aos="fade-left" className="tech__others">
-          <h2>Other</h2>
-          <img className="tech__logo" src={javascriptlogo} alt="logo" />
-          <img className="tech__logo" src={typescriptlogo} alt="logo" />
-          <img className="tech__logo" src={awslogo} alt="logo" />
-          <img className="tech__logo" src={herokulogo} alt="logo" />
-          <img className="tech__logo" src={npmlogo} alt="logo" />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

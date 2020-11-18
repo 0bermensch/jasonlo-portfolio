@@ -5,22 +5,28 @@
   text-align: center;
 
   &__card {
-    margin: 7rem 0;
-    height: 15rem;
+    margin: 5rem 10%;
+    height: 50%;
     width: 80%;
   }
-  &__card:hover {
-    height: 16rem;
-    width: 85%;
-  }
+
   &__card--mainpic {
     max-width: 100%;
-    max-height: 120%;
+    max-height: 100%;
     border-radius: 10%;
   }
   &__card--title {
     font-family: "biorhyme-bold";
   }
+}
+.carousel-item {
+  height: 20rem;
+}
+.carousel-indicators {
+  padding-bottom: 6rem;
+}
+.carousel-control-next-icon {
+  right: 2rem;
 }
 
 @include tablet {
@@ -30,11 +36,21 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 20rem 20rem 20rem;
     grid-column-gap: 3rem;
-    grid-row-gap: 10rem;
-    &__card:hover {
-      height: 100%;
-      width: 100%;
+    grid-row-gap: 15rem;
+    &__card {
+      height: 80%;
+      width: 80%;
     }
+
+    &__card--mainpic {
+      max-height: 100%;
+      max-width: 100%;
+    }
+    // &__card:hover:nth-child(1),
+    // &__card:hover:nth-child(2) {
+    //   height: 50%;
+    //   width: 50%;
+    // }
     &__card--title {
       font-size: 25px;
     }
@@ -46,17 +62,14 @@
     margin: 0 15%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20rem 20rem 20rem;
+    grid-template-rows: 30rem 30rem 30rem;
     grid-column-gap: 7rem;
-    grid-row-gap: 35rem;
+    grid-row-gap: 20%;
     &__card {
-      height: 25rem;
+      height: 50%;
       width: 25rem;
     }
-    &__card:hover {
-      height: 125%;
-      width: 115%;
-    }
+
     &__card--title {
       margin-top: 1rem;
       font-size: 40px;

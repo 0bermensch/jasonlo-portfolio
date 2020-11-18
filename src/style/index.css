@@ -293,24 +293,31 @@
 }
 
 .project__card {
-  margin: 7rem 0;
-  height: 15rem;
+  margin: 5rem 10%;
+  height: 50%;
   width: 80%;
-}
-
-.project__card:hover {
-  height: 16rem;
-  width: 85%;
 }
 
 .project__card--mainpic {
   max-width: 100%;
-  max-height: 120%;
+  max-height: 100%;
   border-radius: 10%;
 }
 
 .project__card--title {
   font-family: "biorhyme-bold";
+}
+
+.carousel-item {
+  height: 20rem;
+}
+
+.carousel-indicators {
+  padding-bottom: 6rem;
+}
+
+.carousel-control-next-icon {
+  right: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -323,11 +330,15 @@
     -ms-grid-rows: 20rem 20rem 20rem;
         grid-template-rows: 20rem 20rem 20rem;
     grid-column-gap: 3rem;
-    grid-row-gap: 10rem;
+    grid-row-gap: 15rem;
   }
-  .project__card:hover {
-    height: 100%;
-    width: 100%;
+  .project__card {
+    height: 80%;
+    width: 80%;
+  }
+  .project__card--mainpic {
+    max-height: 100%;
+    max-width: 100%;
   }
   .project__card--title {
     font-size: 25px;
@@ -341,18 +352,14 @@
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 20rem 20rem 20rem;
-        grid-template-rows: 20rem 20rem 20rem;
+    -ms-grid-rows: 30rem 30rem 30rem;
+        grid-template-rows: 30rem 30rem 30rem;
     grid-column-gap: 7rem;
-    grid-row-gap: 35rem;
+    grid-row-gap: 20%;
   }
   .project__card {
-    height: 25rem;
+    height: 50%;
     width: 25rem;
-  }
-  .project__card:hover {
-    height: 125%;
-    width: 115%;
   }
   .project__card--title {
     margin-top: 1rem;
