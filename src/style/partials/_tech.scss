@@ -15,6 +15,12 @@
     fill: purple;
   }
 }
+.techtitle {
+  font-family: "biorhyme-extrabold";
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 2rem;
+}
 
 @include tablet {
   .tech {
@@ -39,6 +45,18 @@
     }
   }
 }
+.techtitle {
+  font-size: 4rem;
+}
 
 @include desktop {
+  .tech {
+    &__logo {
+      height: 30%;
+      width: 30%;
+    }
+  }
+  .techtitle {
+    font-size: 6rem;
+  }
 }

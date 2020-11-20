@@ -8,6 +8,9 @@ const Information = () => {
   }, []);
   return (
     <>
+      <h1 className="infotitle" id="experience">
+        Experience
+      </h1>
       <div data-aos="zoom-in-up" className="info">
         <div className="info__jobs">
           <h1 className="info__title">Experience</h1>

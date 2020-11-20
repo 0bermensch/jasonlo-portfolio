@@ -3,7 +3,7 @@ import Typist from "react-typist";
 
 const Introduction = () => {
   return (
-    <div className="introduction">
+    <div className="introduction" id="intro">
       <img className="introduction__pic" />
       <div className="introduction__divider">
         <h1 className="introduction__name">Hey, I am Jason Lo</h1>

@@ -13,13 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Projects = () => {
   return (
     <>
-      <h1
-        style={{
-          textAlign: "center",
-          fontFamily: "biorhyme-extrabold",
-          marginBottom: "5rem",
-        }}
-      >
+      <h1 className="projecttitle" id="projects">
         Projects
       </h1>
       <div className="project">

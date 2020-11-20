@@ -23,7 +23,7 @@ const Tech = () => {
   }, []);
   return (
     <>
-      <h1 style={{ textAlign: "center", fontFamily: "biorhyme-extrabold" }}>
+      <h1 className="techtitle" id="tech">
         Tech Stack
       </h1>
       <div className="tech">

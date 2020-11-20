@@ -1,16 +1,134 @@
 .contact {
-  &__githublogo {
-    fill: white;
+  text-align: center;
+  margin: 3rem 10% 0;
+  padding-bottom: 6rem;
+
+  &__title {
+    font-family: "biorhyme-extrabold";
+    font-size: 30px;
+    margin: 5rem 0 3rem;
   }
+  &__email {
+    display: flex;
+    flex-direction: column;
+  }
+  &__email--logo,
+  &__phone--logo {
+    height: 20%;
+    width: 20%;
+    margin-bottom: 1rem;
+  }
+  &__email--email,
+  &__phone--number {
+    font-family: "biorhyme-bold";
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color: $grey;
+  }
+  &__phone {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__githublogo,
   &__linkedinlogo {
-    height: 40px;
-    width: 40px;
+    height: 25%;
+    width: 25%;
+    margin: 1rem 10%;
+  }
+  &__divider1 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__divider2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  &__resume,
+  &__letter {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 10%;
+    height: 3rem;
+    width: 60%;
+    background-color: #2f8cc2;
+  }
+  &__letter--text,
+  &__resume--text {
+    font-family: "biorhyme";
+  }
+  &__heading {
+    font-family: "biorhyme-bold";
+    color: $offwhite;
+    font-size: 2rem;
+    margin: 1rem 0;
   }
 }
 
 @include tablet {
+  .contact {
+    &__title {
+      font-size: 60px;
+    }
+    &__divider {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 2rem 0;
+    }
+    &__email--logo,
+    &__phone--logo,
+    &__githublogo,
+    &__linkedinlogo {
+      height: 7rem;
+      width: 7rem;
+    }
+    &__divider1 {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 3rem 0;
+    }
+    &__divider2 {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__resume,
+    &__letter {
+      height: 80px;
+      width: 25%;
+    }
+    &__letter--text,
+    &__resume--text {
+      font-size: 1rem;
+    }
+  }
 }
 
 @include desktop {
+  .contact {
+    margin-top: 17rem;
+    &__title {
+      font-size: 7rem;
+    }
+    &__heading {
+      font-size: 4rem;
+    }
+    &__email--logo,
+    &__phone--logo,
+    &__githublogo,
+    &__linkedinlogo {
+      width: 10rem;
+      height: 10rem;
+    }
+    &__divider2 {
+      margin-top: 4rem;
+    }
+    &__letter--text,
+    &__resume--text {
+      font-size: 2rem;
+    }
+  }
 }

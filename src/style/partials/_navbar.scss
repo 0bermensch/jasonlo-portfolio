@@ -1,4 +1,42 @@
+.navbar {
+  &__myface {
+    height: 0px;
+    width: 0px;
+  }
+  &__navs {
+    display: none;
+  }
+  &__navs--item {
+    display: none;
+  }
+}
+
 @include tablet {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    &__myface {
+      height: 7%;
+      width: 7%;
+      border-radius: 50%;
+    }
+    &__navs {
+      justify-content: space-between;
+      font-family: "biorhyme-bold";
+    }
+    &__navs--item {
+      margin: 0 1rem;
+      color: $offwhite;
+    }
+    &__navs--item:hover {
+      text-decoration: none;
+    }
+    &__navs--item:active {
+      color: blue;
+    }
+  }
 }
 
 @include desktop {

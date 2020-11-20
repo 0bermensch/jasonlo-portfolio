@@ -18,15 +18,27 @@
   &__card--title {
     font-family: "biorhyme-bold";
   }
+  &__card--buttontext {
+    font-family: "biorhyme-bold";
+  }
+
+  &__modal--header {
+    font-family: "biorhyme-bold";
+  }
+  &__modal--techstack,
+  &__modal--github {
+    font-family: "biorhyme";
+    border-top: 1px dashed black;
+  }
+  &__modal--video {
+    height: 15rem;
+  }
 }
-.carousel-item {
-  height: 20rem;
-}
-.carousel-indicators {
-  padding-bottom: 6rem;
-}
-.carousel-control-next-icon {
-  right: 2rem;
+.projecttitle {
+  font-family: "biorhyme-extrabold";
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 @include tablet {
@@ -34,9 +46,9 @@
     margin: 0 15%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20rem 20rem 20rem;
-    grid-column-gap: 3rem;
-    grid-row-gap: 15rem;
+    grid-template-rows: auto;
+    grid-column-gap: 10%;
+    grid-row-gap: 6rem;
     &__card {
       height: 80%;
       width: 80%;
@@ -55,16 +67,22 @@
       font-size: 25px;
     }
   }
+  .projecttitle {
+    font-size: 4rem;
+  }
 }
 
 @include desktop {
   .project {
-    margin: 0 15%;
+    margin: 0 15% 5rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30rem 30rem 30rem;
-    grid-column-gap: 7rem;
-    grid-row-gap: 20%;
+    grid-template-rows: auto;
+    grid-column-gap: 10%;
+    grid-row-gap: 6rem;
+    &__title {
+      font-size: 80px;
+    }
     &__card {
       height: 50%;
       width: 25rem;
@@ -74,5 +92,8 @@
       margin-top: 1rem;
       font-size: 40px;
     }
+  }
+  .projecttitle {
+    font-size: 7rem;
   }
 }

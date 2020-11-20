@@ -35,13 +35,23 @@
     border-bottom: 1px solid white;
   }
 }
+.infotitle {
+  font-family: "biorhyme-extrabold";
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 2rem;
+}
 
 @include tablet {
+  .infotitle {
+    margin-top: 11rem;
+    font-size: 4rem;
+  }
   .info {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 20rem 15%;
+    margin: 0 15%;
 
     &__jobs,
     &__education,
