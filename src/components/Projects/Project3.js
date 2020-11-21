@@ -60,19 +60,18 @@ const Project3 = () => {
           Country-App
         </Modal.Header>
         <Modal.Body>
-          <video
-            style={{ height: "300px", width: "400px" }}
-            className="project__modal--video"
-            controls
-          >
+          <video className="project__modal--video" controls>
             <source src={countryvid} type="video/mp4"></source>
           </video>
           <div className="project__modal--techstack">
             TECHSTACK: React, sass.module, REST API
           </div>
-          <div className="project__modal--github">
+          <a
+            href="https://github.com/0bermensch/Rest-Country-App"
+            className="project__modal--github"
+          >
             GITHUB: https://github.com/0bermensch/Rest-Country-App
-          </div>
+          </a>
         </Modal.Body>
       </Modal>
     </>

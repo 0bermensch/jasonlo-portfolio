@@ -12,10 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Projects = () => {
   return (
-    <>
-      <h1 className="projecttitle" id="projects">
-        Projects
-      </h1>
+    <div id="projects">
+      <h1 className="projecttitle">Projects</h1>
       <div className="project">
         <Project1 />
         <Project2 />
@@ -25,7 +23,7 @@ const Projects = () => {
         <Project6 />
         <Project7 />
       </div>
-    </>
+    </div>
   );
   // const [detail, setDetail] = useState(false);
   // const handleOpen = () => setDetail(true);

@@ -8,7 +8,7 @@ import myface from "../Assets/Jason_Lo_WD.jpg";
 const Navigation = () => {
   return (
     <>
-      <nav className="navbar">
+      <div className="navbar">
         <img className="navbar__myface" src={myface} alt="myface" />
         <div className="navbar__navs">
           <Link
@@ -57,7 +57,7 @@ const Navigation = () => {
             Contacts
           </Link>
         </div>
-      </nav>
+      </div>
     </>
   );
 };

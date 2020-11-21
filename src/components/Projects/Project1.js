@@ -66,9 +66,12 @@ const Project1 = () => {
             TECHSTACK: React Native, Node.js, Express, MongoDB, Expo,
             React-Navigation, User Authentication, ngrok
           </div>
-          <div className="project__modal--github">
+          <a
+            href="https://github.com/0bermensch/Trail-Tracker"
+            className="project__modal--github"
+          >
             GITHUB: https://github.com/0bermensch/Trail-Tracker
-          </div>
+          </a>
         </Modal.Body>
       </Modal>
     </>

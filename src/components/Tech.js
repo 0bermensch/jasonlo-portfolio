@@ -22,10 +22,8 @@ const Tech = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <>
-      <h1 className="techtitle" id="tech">
-        Tech Stack
-      </h1>
+    <div id="tech">
+      <h1 className="techtitle">Tech Stack</h1>
       <div className="tech">
         <div className="tech__divider">
           <div data-aos="fade-right" className="tech__frontend">
@@ -59,7 +57,7 @@ const Tech = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

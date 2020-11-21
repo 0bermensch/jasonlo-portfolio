@@ -7,10 +7,8 @@ const Information = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <>
-      <h1 className="infotitle" id="experience">
-        Experience
-      </h1>
+    <div id="experience">
+      <h1 className="infotitle">Experience</h1>
       <div data-aos="zoom-in-up" className="info">
         <div className="info__jobs">
           <h1 className="info__title">Experience</h1>
@@ -37,7 +35,7 @@ const Information = () => {
           <p className="info__date">Nov. 2020</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

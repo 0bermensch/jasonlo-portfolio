@@ -64,9 +64,12 @@ const Project2 = () => {
           <div className="project__modal--techstack">
             TECHSTACK: React Native, Expo, RESTful API
           </div>
-          <div className="project__modal--github">
+          <a
+            href="https://github.com/0bermensch/yelp-clone"
+            className="project__modal--github"
+          >
             GITHUB: https://github.com/0bermensch/yelp-clone
-          </div>
+          </a>
         </Modal.Body>
       </Modal>
     </>

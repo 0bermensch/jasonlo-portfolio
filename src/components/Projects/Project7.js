@@ -5,6 +5,7 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import omdb1 from "../../Assets/Projectpics/omdb1.PNG";
 import omdb2 from "../../Assets/Projectpics/omdb2.PNG";
 import omdb3 from "../../Assets/Projectpics/omdb3.PNG";
+import omdbvid from "../../Assets/projectvids/OMDB - Vid.mp4";
 
 const Project7 = () => {
   const [modal, setModal] = useState(false);
@@ -59,7 +60,9 @@ const Project7 = () => {
           OMDB-Movies
         </Modal.Header>
         <Modal.Body>
-          <div className="project__modal--video">video</div>
+          <video className="project__modal--video" controls>
+            <source src={omdbvid} type="video/mp4"></source>
+          </video>
           <div className="project__modal--techstack">
             TECHSTACK: React, REST API, CSS
           </div>

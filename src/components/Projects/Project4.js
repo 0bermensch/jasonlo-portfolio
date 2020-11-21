@@ -5,6 +5,7 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import instock1 from "../../Assets/Projectpics/instock1.PNG";
 import instock2 from "../../Assets/Projectpics/instock2.PNG";
 import instock3 from "../../Assets/Projectpics/instock3.PNG";
+import instockvid from "../../Assets/projectvids/InStock - Vid.mp4";
 
 const Project4 = () => {
   const [modal, setModal] = useState(false);
@@ -59,13 +60,18 @@ const Project4 = () => {
           InStock
         </Modal.Header>
         <Modal.Body>
-          <div className="project__modal--video">video</div>
+          <video className="project__modal--video" controls>
+            <source src={instockvid} type="video/mp4"></source>
+          </video>
           <div className="project__modal--techstack">
             TECHSTACK: React, sass, Node.js, Express, json
           </div>
-          <div className="project__modal--github">
+          <a
+            href="https://github.com/0bermensch/Instock"
+            className="project__modal--github"
+          >
             GITHUB: https://github.com/0bermensch/Instock
-          </div>
+          </a>
         </Modal.Body>
       </Modal>
     </>

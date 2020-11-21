@@ -5,6 +5,7 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import weather1 from "../../Assets/Projectpics/typescript-weather1.PNG";
 import weather2 from "../../Assets/Projectpics/typescript-weather2.PNG";
 import weather3 from "../../Assets/Projectpics/typescript-weather3.PNG";
+import weathervid from "../../Assets/projectvids/WeatherApp - Vid.mp4";
 
 const Project5 = () => {
   const [modal, setModal] = useState(false);
@@ -59,13 +60,18 @@ const Project5 = () => {
           OpenWeather
         </Modal.Header>
         <Modal.Body>
-          <div className="project__modal--video">video</div>
+          <video className="project__modal--video" controls>
+            <source src={weathervid} type="video/mp4"></source>
+          </video>
           <div className="project__modal--techstack">
             TECHSTACK: React, Redux, Typescript, REST API, CSS
           </div>
-          <div className="project__modal--github">
+          <a
+            href="https://github.com/0bermensch/SimpleWeatherApp"
+            className="project__modal--github"
+          >
             GITHUB: https://github.com/0bermensch/SimpleWeatherApp
-          </div>
+          </a>
         </Modal.Body>
       </Modal>
     </>
