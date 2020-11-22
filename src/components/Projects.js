@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Project1 from "./Projects/Project1";
 import Project2 from "./Projects/Project2";
@@ -9,18 +9,23 @@ import Project6 from "./Projects/Project6";
 import Project7 from "./Projects/Project7";
 import Project8 from "./Projects/Project8";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div id="projects">
       <h1 className="projecttitle">Projects</h1>
-      <div className="project">
+      <div className="project" data-aos="zoom-in-up">
         <Project1 />
         <Project2 />
         <Project3 />
         <Project4 />
         <Project5 />
-        <Project6 />
+        {/* <Project6 /> */}
         <Project7 />
       </div>
     </div>

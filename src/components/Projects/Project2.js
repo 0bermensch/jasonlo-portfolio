@@ -5,6 +5,7 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import food1 from "../../Assets/Projectpics/food1.PNG";
 import food2 from "../../Assets/Projectpics/food2.PNG";
 import food3 from "../../Assets/Projectpics/food3.PNG";
+import foodvid from "../../Assets/projectvids/Yelp-Clone Vid.mp4";
 
 const Project2 = () => {
   const [modal, setModal] = useState(false);
@@ -60,7 +61,9 @@ const Project2 = () => {
           Yelp-Clone
         </Modal.Header>
         <Modal.Body>
-          <div className="project__modal--video">video</div>
+          <video className="project__modal--video" controls>
+            <source src={foodvid} type="video/mp4"></source>
+          </video>
           <div className="project__modal--techstack">
             TECHSTACK: React Native, Expo, RESTful API
           </div>

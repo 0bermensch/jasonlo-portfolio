@@ -11,7 +11,7 @@ const Information = () => {
       <h1 className="infotitle">Experience</h1>
       <div data-aos="zoom-in-up" className="info">
         <div className="info__jobs">
-          <h1 className="info__title">Experience</h1>
+          <h1 className="info__title">Employment</h1>
           <h2 className="info__entity">Krypto Direct Incorporated</h2>
           <p className="info__role">Front-End React Native Developer</p>
           <p className="info__date">April 2020 - Sept 2020</p>

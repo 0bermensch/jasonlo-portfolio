@@ -2,37 +2,38 @@
   padding: 0 10%;
   display: flex;
   flex-direction: column;
+  background-color: $offwhite;
+  color: black;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 
   &__jobs,
   &__education,
   &__certification {
     font-family: "biorhyme-extrabold";
-    color: $offwhite;
+    color: black;
     padding-top: 30px;
   }
   &__title {
     font-size: 30px;
     padding-bottom: 1rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
   }
   &__entity {
     font-family: "biorhyme-bold";
     font-size: 16px;
-    color: $lightgrey;
   }
   &__role {
     font-family: "biorhyme";
     font-size: 13px;
     margin-bottom: 0.2rem;
-    color: $grey;
   }
   &__date {
     font-family: "biorhyme-light";
-    color: $grey;
     font-size: 13px;
     margin: 0;
     padding-bottom: 0.8rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
   }
 }
 .infotitle {
@@ -45,14 +46,17 @@
 
 @include tablet {
   .infotitle {
-    margin-top: 11rem;
+    margin-top: 2rem;
     font-size: 4rem;
   }
   .info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 15%;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 30rem;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
 
     &__jobs,
     &__education,
@@ -62,7 +66,7 @@
     &__title {
       font-size: 28px;
       padding-bottom: 1rem;
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid black;
     }
     &__entity {
       font-size: 22px;
@@ -73,7 +77,7 @@
     &__date {
       font-size: 17px;
       padding-bottom: 1.5rem;
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid black;
     }
   }
 }
@@ -83,7 +87,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 20rem;
+    margin-top: 0rem;
 
     &__jobs,
     &__education,

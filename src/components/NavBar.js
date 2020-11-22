@@ -1,6 +1,4 @@
 import React from "react";
-import NavBar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-scroll";
 import myface from "../Assets/Jason_Lo_WD.jpg";
@@ -25,15 +23,6 @@ const Navigation = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            to="experience"
-          >
-            Experience
-          </Link>
-          <Link
-            className="navbar__navs--item"
-            activeClass="active"
-            spy={true}
-            smooth={true}
             to="tech"
           >
             Tech
@@ -46,6 +35,15 @@ const Navigation = () => {
             to="projects"
           >
             Projects
+          </Link>
+          <Link
+            className="navbar__navs--item"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            to="experience"
+          >
+            Experience
           </Link>
           <Link
             className="navbar__navs--item"

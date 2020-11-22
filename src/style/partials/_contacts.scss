@@ -1,14 +1,23 @@
+#contacts {
+  background-color: $offwhite;
+}
+.contacttitle {
+  font-family: "biorhyme-extrabold";
+  font-size: 30px;
+  margin: 0;
+  padding-top: 2rem;
+  background-color: $offwhite;
+  color: black;
+  text-align: center;
+  padding-top: 5rem;
+}
 .contact {
   text-align: center;
-  margin: 3rem 10% 0;
   padding-bottom: 6rem;
+  background-color: black;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 
-  &__title {
-    font-family: "biorhyme-extrabold";
-    font-size: 30px;
-    margin: 5rem 0 3rem;
-    padding-top: 6rem;
-  }
   &__email {
     display: flex;
     flex-direction: column;
@@ -70,15 +79,17 @@
 }
 
 @include tablet {
+  .contacttitle {
+    font-size: 60px;
+  }
   .contact {
-    &__title {
-      font-size: 60px;
-    }
     &__divider {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       margin: 2rem 0;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
     }
     &__email--logo,
     &__phone--logo,
@@ -109,11 +120,12 @@
 }
 
 @include desktop {
+  .contacttitle {
+    font-size: 7rem;
+  }
   .contact {
     margin-top: 17rem;
-    &__title {
-      font-size: 7rem;
-    }
+
     &__heading {
       font-size: 4rem;
     }

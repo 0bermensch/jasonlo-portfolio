@@ -24,7 +24,7 @@ const Tech = () => {
   return (
     <div id="tech">
       <h1 className="techtitle">Tech Stack</h1>
-      <div className="tech">
+      <div className="tech" data-aos="zoom-in-up">
         <div className="tech__divider">
           <div data-aos="fade-right" className="tech__frontend">
             <h2>Front-End</h2>
