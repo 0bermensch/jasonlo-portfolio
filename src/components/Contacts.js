@@ -4,7 +4,8 @@ import githublogo from "../Assets/icons/github-6-128.png";
 import linkedinlogo from "../Assets/icons/linkedin-original.svg";
 import emaillogo from "../Assets/icons/email.svg";
 import phonelogo from "../Assets/icons/telephone.svg";
-import context from "react-bootstrap/esm/AccordionContext";
+import resume from "../Assets/JasonLoResume.pdf";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -58,12 +59,19 @@ const Contacts = () => {
         </div>
         <div className="contact__heading">Resume & Cover Letter</div>
         <div className="contact__divider2">
-          <Button className="contact__resume" variant="primary">
-            <div className="contact__resume--text">Resume</div>
-          </Button>
-          <Button className="contact__letter" variant="primary">
+          <a style={{ width: "23%" }} href={resume} download>
+            <Button
+              className="contact__resume"
+              style={{ width: "100%" }}
+              variant="primary"
+            >
+              <div className="contact__resume--text">Resume</div>
+            </Button>
+          </a>
+
+          {/* <Button className="contact__letter" variant="primary">
             <div className="contact__letter--text">Cover Letter</div>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

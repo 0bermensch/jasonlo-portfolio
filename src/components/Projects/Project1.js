@@ -63,7 +63,7 @@ const Project1 = () => {
         </Modal.Header>
         <Modal.Body>
           <video className="project__modal--video" controls>
-            <source src={foodvid} type="video/mp4"></source>
+            <source src={trackervid} type="video/mp4"></source>
           </video>
           <div className="project__modal--techstack">
             TECHSTACK: React Native, Node.js, Express, MongoDB, Expo,

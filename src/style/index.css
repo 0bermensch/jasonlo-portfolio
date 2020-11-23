@@ -628,7 +628,11 @@
   margin-top: 2.5rem;
 }
 
-.contact__resume, .contact__letter {
+.contact__letter {
+  display: none;
+}
+
+.contact__resume {
   margin: 1rem 0;
   padding: 0.5rem;
   border-radius: 10%;
@@ -639,6 +643,9 @@
 
 .contact__letter--text, .contact__resume--text {
   font-family: "biorhyme";
+  color: white;
+  text-decoration: none;
+  width: 100%;
 }
 
 .contact__heading {
