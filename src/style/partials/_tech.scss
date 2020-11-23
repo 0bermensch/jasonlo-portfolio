@@ -43,6 +43,7 @@
     &__logo {
       height: 25%;
       width: 25%;
+      margin: 1rem;
     }
     &__logo:hover {
       height: 30%;
@@ -60,6 +61,11 @@
 @include desktop {
   .tech {
     &__logo {
+      height: 25%;
+      width: 25%;
+      margin: 1rem;
+    }
+    &__logo:hover {
       height: 30%;
       width: 30%;
     }

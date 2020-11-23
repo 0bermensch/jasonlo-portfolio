@@ -5,6 +5,7 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import track1 from "../../Assets/Projectpics/trailtrack1.PNG";
 import track2 from "../../Assets/Projectpics/trailtrack2.PNG";
 import track3 from "../../Assets/Projectpics/trailtrack4.PNG";
+import trackervid from "../../Assets/projectvids/trailtracker-vid.mp4";
 
 const Project1 = () => {
   const [modal, setModal] = useState(false);
@@ -61,7 +62,9 @@ const Project1 = () => {
           TrailTracker
         </Modal.Header>
         <Modal.Body>
-          <div className="project__modal--video">video</div>
+          <video className="project__modal--video" controls>
+            <source src={foodvid} type="video/mp4"></source>
+          </video>
           <div className="project__modal--techstack">
             TECHSTACK: React Native, Node.js, Express, MongoDB, Expo,
             React-Navigation, User Authentication, ngrok
