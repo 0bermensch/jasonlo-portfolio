@@ -54,6 +54,7 @@ const Contacts = () => {
               className="contact__linkedinlogo"
               src={linkedinlogo}
               alt="linkedinlogo"
+              style={{ display: "inline" }}
             />
           </a>
         </div>

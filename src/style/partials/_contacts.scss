@@ -98,10 +98,12 @@
     }
     &__email--logo,
     &__phone--logo,
-    &__githublogo,
-    &__linkedinlogo {
+    &__githublogo {
       height: 7rem;
       width: 7rem;
+    }
+    &__linkedinlogo {
+      display: inline;
     }
     &__divider1 {
       flex-direction: row;
