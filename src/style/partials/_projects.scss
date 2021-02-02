@@ -1,40 +1,44 @@
-#projects {
-  background-color: $offwhite;
+.projectitle {
+  color: $offwhite;
+  text-align: center;
+  font-family: "jost-b";
+  font-size: 32px;
+  margin-bottom: 50px;
+  padding-top: 40px;
 }
 .project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
   background-color: black;
-
   &__card {
-    margin: 5rem 10%;
-    height: 50%;
-    width: 80%;
-  }
-
-  &__card--mainpic {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10%;
+    height: 70vh;
   }
   &__card--title {
-    font-family: "biorhyme-bold";
-    font-size: 1rem;
+    font-family: "jost-b";
+    font-size: 20px;
+    color: $offwhite;
+  }
+  &__card--mainpic {
+    width: 75%;
+  }
+  &__card--mainpicphone {
+    height: 50%;
+    width: 40%;
+  }
+  &__card--detailb,
+  &__card--demob {
+    margin-top: 0.5rem;
+    width: 60%;
   }
   &__card--buttontext {
-    font-family: "biorhyme-bold";
+    color: white;
+    text-decoration: none;
   }
-
   &__modal--header {
-    font-family: "biorhyme-bold";
+    font-family: "jost-b";
   }
   &__modal--techstack,
   &__modal--github {
-    font-family: "biorhyme";
+    font-family: "jost-m";
     color: black;
     border-top: 1px dashed black;
     text-decoration: none;
@@ -44,74 +48,45 @@
     width: 100% !important;
   }
 }
-.modal-body {
-  padding: 0.5rem !important;
-}
-.projecttitle {
-  font-family: "biorhyme-extrabold";
-  color: black;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  padding-top: 6rem;
-  background-color: $offwhite;
-}
 
 @include tablet {
-  .project {
-    padding: 0 15%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-column-gap: 10%;
-    grid-row-gap: 6rem;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    &__card {
-      height: 80%;
-      width: 80%;
-    }
-
-    &__card--mainpic {
-      max-height: 100%;
-      max-width: 100%;
-    }
-    // &__card:hover:nth-child(1),
-    // &__card:hover:nth-child(2) {
-    //   height: 50%;
-    //   width: 50%;
-    // }
-    &__card--title {
-      font-size: 25px;
-    }
+  .projectitle {
+    font-size: 50px;
   }
-  .projecttitle {
-    font-size: 4rem;
+  .project {
+    &__card {
+      height: 80vh;
+    }
+    &__container {
+      padding: 0 15%;
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: auto;
+      grid-column-gap: 10%;
+      grid-row-gap: 6rem;
+    }
+    &__card--mainpic {
+      height: 18rem;
+    }
+    &__card--button {
+      width: 65%;
+    }
+    &__card--detailb,
+    &__card--demob {
+      margin-top: 0.5rem;
+      width: 75%;
+      height: 35px;
+    }
+    &__card--title {
+      font-size: 30px;
+    }
   }
 }
 
 @include desktop {
   .project {
-    padding: 0 15% 5rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-column-gap: 10%;
-    grid-row-gap: 6rem;
-    &__title {
-      font-size: 80px;
+    &__card--mainpic {
+      height: 22rem;
     }
-    &__card {
-      height: 50%;
-      width: 25rem;
-    }
-
-    &__card--title {
-      margin-top: 1rem;
-      font-size: 40px;
-    }
-  }
-  .projecttitle {
-    font-size: 7rem;
   }
 }

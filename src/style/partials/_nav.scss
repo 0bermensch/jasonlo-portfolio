@@ -1,0 +1,94 @@
+.navbar {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+  &__socials--logo {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  &__hamburger {
+    fill: white;
+  }
+  &__hamburgernav {
+    background-color: white;
+    position: fixed;
+    top: 41px;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 19.43% 20px;
+    margin: 0;
+    font-family: "jost-m";
+  }
+  &__hamburgernav--item {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  &__navs {
+    display: none;
+    color: white;
+  }
+}
+
+@include tablet {
+  .navbar {
+    background-color: black;
+    &__hamburger {
+      display: none;
+    }
+    &__socials--logo {
+      height: 31px;
+      width: 31px;
+    }
+    &__navs {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style-type: none;
+      font-family: "jost-m";
+      margin-right: 2%;
+    }
+    &__navs--item {
+      margin-left: 2rem;
+      color: white;
+      font-size: 1rem;
+    }
+    &__navs--item:hover {
+      color: violet;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@include desktop {
+  .navbar {
+    &__socials--logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    &__navs--item {
+      margin-left: 2rem;
+      font-size: 25px;
+    }
+  }
+}

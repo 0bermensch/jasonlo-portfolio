@@ -1,21 +1,25 @@
-import React from "react";
-import { Link } from "react-scroll";
-import Introduction from "./components/Introduction";
-import Information from "./components/Information";
+import Navigation from "./components/Nav";
+import Intro from "./components/Intro";
+import About from "./components/About";
 import Tech from "./components/Tech";
-import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
-import Navigation from "./components/NavBar";
+import Projects from "./components/Projects";
+import Space from "./components/space";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Introduction />
+      <Intro />
+      <About />
+      <Space />
       <Tech />
+      <Space />
       <Projects />
-      <Information />
+      <Space />
       <Contacts />
+      <Footer />
     </div>
   );
 }

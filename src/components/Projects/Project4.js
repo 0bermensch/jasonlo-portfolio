@@ -21,30 +21,27 @@ const Project4 = () => {
             <img
               className="project__card--mainpic"
               src={instock1}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={instock2}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={instock3}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
         </Carousel>
         <Button
-          style={{ marginTop: "0.5rem", width: "70%" }}
-          variant="light"
+          className="project__card--detailb"
+          variant="primary"
           onClick={() => setModal(true)}
         >
           <div className="project__card--buttontext">Details</div>

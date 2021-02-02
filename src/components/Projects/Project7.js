@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Carousel, Button, Modal } from "react-bootstrap";
-import omdb1 from "../../Assets/Projectpics/omdb1.PNG";
-import omdb2 from "../../Assets/Projectpics/omdb2.PNG";
-import omdb3 from "../../Assets/Projectpics/omdb3.PNG";
-import omdbvid from "../../Assets/projectvids/OMDB - Vid.mp4";
+import arch1 from "../../Assets/Projectpics/arch1.PNG";
+import arch2 from "../../Assets/Projectpics/arch2.PNG";
+import arch3 from "../../Assets/Projectpics/arch3.PNG";
 
 const Project7 = () => {
   const [modal, setModal] = useState(false);
@@ -15,39 +14,32 @@ const Project7 = () => {
   return (
     <>
       <div data-aos="fade-up" className="project__card">
-        <div className="project__card--title">OMDB-Movies</div>
+        <div className="project__card--title">Architect-Studio</div>
         <Carousel>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={omdb1}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
-            />
+            <img className="project__card--mainpic" src={arch1} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={omdb2}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
-            />
+            <img className="project__card--mainpic" src={arch2} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={omdb3}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
-            />
+            <img className="project__card--mainpic" src={arch3} alt="mainpic" />
           </Carousel.Item>
         </Carousel>
         <Button
-          style={{ marginTop: "0.5rem", width: "70%" }}
-          variant="light"
+          className="project__card--detailb"
+          variant="primary"
           onClick={() => setModal(true)}
         >
           <div className="project__card--buttontext">Details</div>
+        </Button>
+        <Button className="project__card--demob" variant="primary">
+          <a
+            className="project__card--buttontext"
+            href="https://architect-studio.vercel.app/#/"
+          >
+            Demo
+          </a>
         </Button>
       </div>
       <Modal
@@ -57,17 +49,14 @@ const Project7 = () => {
         onHide={() => setModal(false)}
       >
         <Modal.Header className="project__modal--header" closeButton>
-          OMDB-Movies
+          Architect-Studio
         </Modal.Header>
         <Modal.Body>
-          <video className="project__modal--video" controls>
-            <source src={omdbvid} type="video/mp4"></source>
-          </video>
           <div className="project__modal--techstack">
-            TECHSTACK: React, REST API, CSS
+            TECHSTACK: React, Scss, Figma
           </div>
           <div className="project__modal--github">
-            GITHUB: https://github.com/0bermensch/omdb-challenge
+            GITHUB: https://github.com/0bermensch/arch-studio
           </div>
         </Modal.Body>
       </Modal>

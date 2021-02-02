@@ -1,23 +1,65 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
-import githublogo from "../Assets/icons/github-6-128.png";
-import linkedinlogo from "../Assets/icons/linkedin-original.svg";
 import emaillogo from "../Assets/icons/email.svg";
 import phonelogo from "../Assets/icons/telephone.svg";
-import resume from "../Assets/JasonLoResume.pdf";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
 
 const Contacts = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0q05cud",
+        "template_ai0pbvy",
+        e.target,
+        "user_fVA9crxMYZesVPmSxOQcg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
-    <div id="contacts">
-      <div className="contacttitle">Get In Touch!</div>
-      <div className="contact" data-aos="zoom-in-up">
-        <div className="contact__heading">Contacts</div>
+    <div id="contacts" className="contact">
+      <div className="contact__title">Contacts</div>
+      <div className="contact__container">
+        <form className="contact__form" onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            className="contact__form--nameinput"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="contact__form--emailinput"
+          />
+
+          <input
+            type="text"
+            name="message"
+            placeholder="body"
+            className="contact__form--bodyinput"
+          />
+          <Button
+            className="contact__form--submit"
+            type="submit"
+            variant="dark"
+          >
+            <div className="">Send</div>
+          </Button>
+        </form>
+
         <div className="contact__divider">
           <div className="contact__email">
             <a href="mailto:jason.lo.kc@gmail.com">
@@ -39,40 +81,6 @@ const Contacts = () => {
             </a>
             <div className="contact__phone--number">+1 778-891-3983</div>
           </div>
-        </div>
-        <div className="contact__heading">Socials</div>
-        <div className="contact__divider1">
-          <a href="https://github.com/0bermensch">
-            <img
-              className="contact__githublogo"
-              src={githublogo}
-              alt="githublogo"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/jason--lo/">
-            <img
-              className="contact__linkedinlogo"
-              src={linkedinlogo}
-              alt="linkedinlogo"
-              style={{ display: "inline" }}
-            />
-          </a>
-        </div>
-        <div className="contact__heading">Resume & Cover Letter</div>
-        <div className="contact__divider2">
-          <a style={{ width: "23%" }} href={resume} download>
-            <Button
-              className="contact__resume"
-              style={{ width: "100%" }}
-              variant="primary"
-            >
-              <div className="contact__resume--text">Resume</div>
-            </Button>
-          </a>
-
-          {/* <Button className="contact__letter" variant="primary">
-            <div className="contact__letter--text">Cover Letter</div>
-          </Button> */}
         </div>
       </div>
     </div>

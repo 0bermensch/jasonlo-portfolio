@@ -1,0 +1,157 @@
+.about {
+  background-color: rgb(248, 248, 248);
+  border-radius: 20px;
+  color: rgb(53, 53, 53);
+  padding-top: 10px;
+  &__content {
+    text-align: center;
+    padding-top: 20px;
+  }
+  &__content--mission {
+    font-family: "jost-b";
+    font-size: 2rem;
+  }
+  &__content--missiontext {
+    font-family: "jost-m";
+    font-size: 1rem;
+    padding: 10px 8%;
+    height: auto;
+  }
+  &__downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px 0 20px;
+  }
+  &__coverletter--text,
+  &__resume--text {
+    font-family: "jost-m";
+    font-size: 12px;
+  }
+  &__valuetitle {
+    text-align: center;
+    padding: 20px 0 0;
+    font-family: "jost-b";
+    font-size: 32px;
+  }
+  &__values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 10%;
+  }
+  &__values--1,
+  &__values--2 {
+    text-align: center;
+    width: 50%;
+    justify-content: space-evenly;
+    padding: 0 1vw;
+  }
+  &__values--section {
+    width: auto;
+    margin-right: 0 !important;
+    margin-bottom: 2vh;
+  }
+  &__values--icon {
+    height: 50px;
+    width: 50px;
+  }
+  &__values--value {
+    text-align: center;
+    font-family: "jost-m";
+    padding-bottom: 30px;
+  }
+  &__values--details {
+    font-family: "jost-m";
+    font-size: 10px;
+  }
+}
+
+@include tablet {
+  .about {
+    padding-top: 10px;
+    margin: 0 8%;
+    &__content {
+      padding: 40px 5% 20px;
+    }
+    &__content--mission {
+      font-size: 40px;
+    }
+    &__content--missiontext {
+      font-size: 20px;
+      height: auto;
+    }
+    &__downloads {
+      width: auto;
+      padding: 0 20%;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    &__coverletter,
+    &__resume {
+      width: 15vw;
+      height: 7vh;
+    }
+
+    &__valuetitle {
+      font-size: 32px;
+      padding: 10px 0;
+    }
+    &__values {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 30px 5% 0;
+    }
+    &__values--1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50%;
+    }
+    &__values--2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50%;
+    }
+    &__values--section {
+      width: 50%;
+    }
+    &__values--details {
+      font-size: 13px;
+    }
+    &__values--icon {
+      height: 80px;
+      width: 80px;
+    }
+    &__values--value {
+      font-size: 2rem;
+      padding-bottom: 10px;
+    }
+    &__values--details {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include desktop {
+  .about {
+    &__content {
+      padding: 30px 5%;
+    }
+    &__content--mission {
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+    &__content--missiontext {
+      font-size: 30px;
+    }
+    &__valuetitle {
+      font-size: 40px;
+    }
+    &__values--icon {
+      height: 140px;
+      width: 140px;
+    }
+  }
+}

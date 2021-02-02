@@ -17,28 +17,13 @@ const Project6 = () => {
         <div className="project__card--title">BandSite</div>
         <Carousel>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={band1}
-              alt="picture"
-              style={{ width: "70%", height: "90%" }}
-            />
+            <img className="project__card--mainpic" src={band1} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={band2}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
-            />
+            <img className="project__card--mainpic" src={band2} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="project__card--mainpic"
-              src={band3}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
-            />
+            <img className="project__card--mainpic" src={band3} alt="mainpic" />
           </Carousel.Item>
         </Carousel>
         <Button

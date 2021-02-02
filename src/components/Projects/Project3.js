@@ -21,34 +21,41 @@ const Project3 = () => {
             <img
               className="project__card--mainpic"
               src={country1}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={country2}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={country3}
-              alt="picture"
-              style={{ width: "75%", height: "100%" }}
+              alt="mainpic"
             />
           </Carousel.Item>
         </Carousel>
-        <Button
-          style={{ marginTop: "0.5rem", width: "70%" }}
-          variant="light"
-          onClick={() => setModal(true)}
-        >
-          <div className="project__card--buttontext">Details</div>
-        </Button>
+        <div className="project__card--buttons">
+          <Button
+            className="project__card--detailb"
+            variant="primary"
+            onClick={() => setModal(true)}
+          >
+            <div className="project__card--buttontext">Details</div>
+          </Button>
+          <Button className="project__card--demob" variant="primary">
+            <a
+              className="project__card--buttontext"
+              href="https://rest-country-app.vercel.app/"
+            >
+              Demo
+            </a>
+          </Button>
+        </div>
       </div>
       <Modal
         className="project__modal"
